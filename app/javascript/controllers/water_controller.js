@@ -10,11 +10,11 @@ export default class extends Controller {
     const interval = setInterval(() => {
       counter++;
       wave.style.transform = "translate(0" + "," + (100 - counter) + "%)";
-      this.loadingTarget.innerText = "estamos em construção"
+      this.loadingTarget.style.zIndex = 4
+      this.loadingTarget.innerText = "site em construção"
       if (counter == 70) {
         clearInterval(interval);
-        this.loadingTarget.innerHTML = "<img src='/images/logo.png' class='teste'>"
-        this.loadingTarget.style.zIndex = 4
+        this.loadingTarget.innerHTML = "<div class='container-message'><img src='/images/logo.png' class='logo'><div class='message'><h4>para saber mais, entre em contato com a gente </h4><a href='https://contate.me/uaipiscinas'><p><i class='fa-brands fa-whatsapp'></i> (31)98844-4948</p></a></div></div>"
       }
     }, 60);
   }
