@@ -14,7 +14,7 @@ export default class extends Controller {
       this.loadingTarget.innerText = "nosso site está em construção"
       if (counter == 70) {
         clearInterval(interval);
-        this.loadingTarget.innerHTML = "<div class='container-message'><img src='/images/logo.png' class='logo'><div class='message'><h4>para saber mais, entre em contato com a gente </h4><a href='https://contate.me/uaipiscinas'><p><i class='fa-brands fa-whatsapp'></i> (31)92009-3281</p></a></div></div>"
+        this.loadingTarget.innerHTML = "<div class='container-message'><img src='/images/logo.png' class='logo'><div class='message'><h4>para saber mais, entre em contato com a gente </h4><a href='https://contate.me/uai.piscinas'><p><i class='fa-brands fa-whatsapp'></i> (31)92009-3281</p></a></div></div>"
       }
     }, 60);
   }
